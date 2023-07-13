@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Blog Posts</h2>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container-fluid">
+            <div class="row">
+                {{blogs}}
+                    <ul>
+                        <li> Title: <a href="{% url 'blog:post_details' post.slug post.created.year post.created.month post.created.day %}" >{{post}}</a>
+                        <li> Author: {{post.author}}</li>
+                        <li> Created: {{post.created}}</li>
+                        <li> Updated: {{post.updated}}</li>
+                        <li> Published: {{post.published}}</li>
+                        <p> Body: {{post.body}}</p>
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            {{post}}
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock  %}
