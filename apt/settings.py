@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
-    'crispy_forms'
+    'crispy_forms',
 
 ]
 SITE_ID = 1

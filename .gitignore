@@ -1,0 +1,29 @@
+# Ignore virtual environment
+venv/
+wenenv/
+
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore staticfiles directory
+/staticfiles/
+
+# Ignore media files
+/media/
+
+# Ignore local settings
+/local_settings.py
+
+# Ignore IDE files
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
+log/
