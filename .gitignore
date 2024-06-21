@@ -1,6 +1,8 @@
 # Ignore virtual environment
 venv/
 wenenv/
+env/
+.env
 
 
 # Ignore database files
